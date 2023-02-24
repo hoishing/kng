@@ -18,13 +18,15 @@
 
 🔗 [source code](https://github.com/hoishing/kng)
 
-## Quick Start
+## Installation
 
 - `pip install kng`
 
-see [documentation] for complete list of utility functions
+## Usage
 
-[documentation]: https://hoishing.github.io/kng
+see [reference] for complete list of utility functions
+
+[reference]: https://hoishing.github.io/kng/reference
 
 ## Need Help?
 
