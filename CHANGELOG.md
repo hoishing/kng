@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.1 (2023-03-06)
+
+#### New Features
+
+- lower python version to 3.10
+
+#### Others
+
+- update changelog, version pump
+
+Full set of changes: [`0.3.0...0.3.1`](https://github.com/hoishing/kng/compare/0.3.0...0.3.1)
+
 ## 0.3.0 (2023-03-06)
 
 #### New Features
