@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "kng"
-version = "0.2.2"
+version = "0.3.0"
 description = "handy utility functions collection"
 authors = [ "Kelvin Ng <hoishing@gmail.com>",]
 readme = "README.md"
