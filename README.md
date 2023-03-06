@@ -10,7 +10,7 @@
 [MIT-url]: https://opensource.org/licenses/MIT
 [black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
 [black-url]: https://github.com/psf/black
-[py-ver-badge]: https://img.shields.io/pypi/pyversions/pipable
+[py-ver-badge]: https://img.shields.io/pypi/pyversions/kng
 [pypi-badge]: https://img.shields.io/pypi/v/kng
 [pypi-url]: https://pypi.org/project/kng
 
