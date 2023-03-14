@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.4.0 (2023-03-14)
+
+#### New Features
+
+- add pd, dt, trade modules
+
+#### Others
+
+- update changelog, version pump
+
+Full set of changes: [`0.3.1...0.4.0`](https://github.com/hoishing/kng/compare/0.3.1...0.4.0)
+
 ## 0.3.1 (2023-03-06)
 
 #### New Features

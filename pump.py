@@ -18,7 +18,7 @@ Examples:
     ./pump.py patch --tag --publish
 """
 
-import tomllib
+import toml
 from click import argument, Choice, option, command, secho
 from subprocess import getstatusoutput
 from functools import reduce
@@ -54,7 +54,7 @@ def main(section, tag, publish):
     """Version Pump Automation CLI"""
 
     # parse toml
-    data = tomllib.load("pyproject.toml")
+    data = toml.load("pyproject.toml")
     old_version = data["tool"]["poetry"]["version"]
     new_version = upgrade_version(section, old_version)
     data["tool"]["poetry"]["version"] = new_version
@@ -63,7 +63,7 @@ def main(section, tag, publish):
 
     if tag:
         with open("pyproject.toml", "w") as f:
-            tomllib.dump(data, f)
+            toml.dump(data, f)
             print(f"pyproject.toml pumped to {new_version}")
 
         run(f"git tag {new_version}")
@@ -125,5 +125,5 @@ def upgrade_version(section: str, old_version: str) -> str:
             ver_dict["patch"] = 0
             ver_dict["minor"] = 0
 
-    new_version: str = reduce("{}.{}".format, ver_dict.values())
+    new_version = reduce("{}.{}".format, ver_dict.values())
     return new_version
