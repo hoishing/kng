@@ -1,14 +1,14 @@
 """utils for iterables"""
 
 
-def list2rows(arr: list, row_size: int, fill_end=None):
-    """convert 1D list to 2D list(rows)
+def list_2d(arr: list, row_size: int, fill_end=None) -> list[list]:
+    """convert 1D list to 2D list, aka. rows
 
     Examples:
-        >>> list2rows([1,2,3,4,5], row_size=2)
+        >>> list_2d([1,2,3,4,5], row_size=2)
         [[1, 2], [3, 4], [5]]
 
-        >>> list2rows([1,2,3,4,5], row_size=2, fill_end=0)
+        >>> list_2d([1,2,3,4,5], row_size=2, fill_end=0)
         [[1, 2], [3, 4], [5, 0]]
 
 
