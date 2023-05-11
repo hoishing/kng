@@ -1,4 +1,6 @@
-"""misc utility functions"""
+"""pypi utility functions"""
+
+from requests import get
 
 
 def check_pypi_availability(pkg_name: str) -> bool:
@@ -17,8 +19,6 @@ def check_pypi_availability(pkg_name: str) -> bool:
     Returns:
         bool: if package name avaialbe return True otherwise False
     """
-    from httpx import get
-
     url = f"https://pypi.org/pypi/{pkg_name}/json"
     response = get(url)
     return response.status_code != 200

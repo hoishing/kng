@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0, 0.6.0, 0.6.1 (2023-03-14)
+
+#### Others
+
+- update changelog, version pump
+
+Full set of changes: [`0.4.0...0.5.0, 0.6.0, 0.6.1`](https://github.com/hoishing/kng/compare/0.4.0...0.5.0, 0.6.0, 0.6.1)
+
 ## 0.4.0 (2023-03-14)
 
 #### New Features

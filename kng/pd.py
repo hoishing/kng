@@ -41,7 +41,7 @@ class multi_df_display:
     """
 
     def _repr_html_(self):
-        """html representation"""
+        """html representation, for notebook"""
         htmls = [
             self.template.format(title, df._repr_html_())
             for title, df in self.dfs.items()
@@ -49,6 +49,6 @@ class multi_df_display:
         return "\n".join(htmls)
 
     def __repr__(self):
-        """string representation"""
+        """string representation, for console"""
         str_reps = [title + "\n" + repr(df) for title, df in self.dfs.items()]
         return "\n\n".join(str_reps)

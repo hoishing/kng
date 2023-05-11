@@ -1,4 +1,4 @@
-from kng.misc import check_pypi_availability
+from kng.pypi import check_pypi_availability
 
 
 def test_check_pypi_availability():
